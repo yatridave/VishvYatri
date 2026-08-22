@@ -17,6 +17,8 @@ function Dashboard() {
         <div style={{ display: 'flex', gap: '20px' }}>
           <span style={{ cursor: 'pointer' }} onClick={() => navigate('/dashboard')}>Home</span>
           <span style={{ cursor: 'pointer' }} onClick={() => navigate('/my-trips')}>My Trips</span>
+            <span style={{ cursor: 'pointer' }} onClick={() => navigate('/city-search')}>Explore Cities</span>
+
         </div>
       </nav>
 
