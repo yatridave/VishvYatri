@@ -6,6 +6,9 @@ VishvYatri is a personalized, multi-city travel planning platform built for the 
 
 [https://vishvyatri.vercel.app](https://vishvyatri.vercel.app) <!-- replace with your actual deployed link -->
 
+<img width="1410" height="906" alt="image" src="https://github.com/user-attachments/assets/053e5b7b-5de4-4ddc-a675-7b9accd16299" />
+
+
 ## 📌 Problem Statement
 
 Traditional trip planning is scattered across spreadsheets, notes, and multiple apps. VishvYatri solves this by giving travelers a single, structured platform to plan multi-city trips, assign dates and activities, estimate costs, and visualize their journey — while making the experience colorful, interactive, and easy to share.
