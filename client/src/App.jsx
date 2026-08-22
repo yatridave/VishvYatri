@@ -5,6 +5,7 @@ import CreateTrip from './pages/CreateTrip';
 import MyTrips from './pages/MyTrips';
 import CitySearch from './pages/CitySearch';
 import './App.css';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/create-trip" element={<CreateTrip />} />
         <Route path="/my-trips" element={<MyTrips />} />
         <Route path="/city-search" element={<CitySearch />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );

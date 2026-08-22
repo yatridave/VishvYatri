@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import loginBg from '../assets/login-bg.jpg';
 
-function Login() {
+function Signup() {
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleSignup = (e) => {
     e.preventDefault();
     navigate('/dashboard');
   };
@@ -29,41 +29,30 @@ function Login() {
         textAlign: 'center'
       }}>
         <h1 style={{ color: '#FF6B6B', marginBottom: '25px' }}>VishvYatri</h1>
-        <p style={{ color: '#888', marginBottom: '30px' }}>Explore the World, Your Way ✈️</p>
-        <form onSubmit={handleLogin}>
+        <p style={{ color: '#888', marginTop: '5px', marginBottom: '30px' }}>Create your account ✈️</p>
+        <form onSubmit={handleSignup}>
+          <input type="text" placeholder="Full Name" required style={inputStyle} />
           <input type="email" placeholder="Email" required style={inputStyle} />
           <input type="password" placeholder="Password" required style={inputStyle} />
-          <button type="submit" style={buttonStyle}>Login</button>
+          <button type="submit" style={buttonStyle}>Sign Up</button>
         </form>
         <p style={{ marginTop: '15px', color: '#666' }}>
-  New here? <span onClick={() => navigate('/signup')} style={{ color: '#4ECDC4', cursor: 'pointer', fontWeight: 'bold' }}>Sign Up</span>
-</p>
+          Already have an account? <span onClick={() => navigate('/')} style={{ color: '#4ECDC4', cursor: 'pointer', fontWeight: 'bold' }}>Login</span>
+        </p>
       </div>
     </div>
   );
 }
 
 const inputStyle = {
-  width: '100%',
-  padding: '14px',
-  margin: '8px 0',
-  borderRadius: '10px',
-  border: '1px solid #ddd',
-  fontSize: '15px',
-  boxSizing: 'border-box'
+  width: '100%', padding: '14px', margin: '8px 0', borderRadius: '10px',
+  border: '1px solid #ddd', fontSize: '15px', boxSizing: 'border-box'
 };
 
 const buttonStyle = {
-  width: '100%',
-  padding: '14px',
-  marginTop: '15px',
-  borderRadius: '10px',
-  border: 'none',
-  background: 'linear-gradient(90deg, #FF6B6B, #FFD93D)',
-  color: 'white',
-  fontSize: '16px',
-  fontWeight: 'bold',
-  cursor: 'pointer'
+  width: '100%', padding: '14px', marginTop: '15px', borderRadius: '10px', border: 'none',
+  background: 'linear-gradient(90deg, #FF6B6B, #FFD93D)', color: 'white',
+  fontSize: '16px', fontWeight: 'bold', cursor: 'pointer'
 };
 
-export default Login;
+export default Signup;
